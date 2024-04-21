@@ -1,0 +1,233 @@
+{
+  "contractName": "HobbyErrors",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "DelegationIsDisabled",
+      "type": "error"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"DelegationIsDisabled\",\"type\":\"error\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/HobbyInterface.sol\":\"HobbyErrors\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/HobbyInterface.sol\":{\"keccak256\":\"0x0c647b4007fb8a7c2c702db8f04c3baeca5441329d8308d1e2540584dbe76f46\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://a32a3ab559e37da39d6396794becc9fca043ee65b14cc29135db8d18666ad041\",\"dweb:/ipfs/QmYauDfJWu4dnYgPu7uiEg8QLzYendaZJfZ9Zuw6b19cVK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.20;\ninterface HobbyInterface {\n    function GetName() external returns (string memory);\n    function GetDescription() external returns (string memory);\n}\n\ninterface HobbyErrors {\n    error DelegationIsDisabled();\n}\n\n",
+  "sourcePath": "/Users/andrei/MyDapp/contracts/HobbyInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/HobbyInterface.sol",
+    "exportedSymbols": {
+      "HobbyErrors": [
+        1382
+      ],
+      "HobbyInterface": [
+        1379
+      ]
+    },
+    "id": 1383,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1368,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:24:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "HobbyInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1379,
+        "linearizedBaseContracts": [
+          1379
+        ],
+        "name": "HobbyInterface",
+        "nameLocation": "74:14:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "fe704a9d",
+            "id": 1373,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetName",
+            "nameLocation": "104:7:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1369,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:2:10"
+            },
+            "returnParameters": {
+              "id": 1372,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1371,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1373,
+                  "src": "132:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1370,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:15:10"
+            },
+            "scope": 1379,
+            "src": "95:52:10",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d9daab9b",
+            "id": 1378,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetDescription",
+            "nameLocation": "161:14:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "175:2:10"
+            },
+            "returnParameters": {
+              "id": 1377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1376,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1378,
+                  "src": "196:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1375,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "195:15:10"
+            },
+            "scope": 1379,
+            "src": "152:59:10",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1383,
+        "src": "64:149:10",
+        "usedErrors": [],
+        "usedEvents": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "HobbyErrors",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 1382,
+        "linearizedBaseContracts": [
+          1382
+        ],
+        "name": "HobbyErrors",
+        "nameLocation": "225:11:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "errorSelector": "5ea4b7d6",
+            "id": 1381,
+            "name": "DelegationIsDisabled",
+            "nameLocation": "249:20:10",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 1380,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "269:2:10"
+            },
+            "src": "243:29:10"
+          }
+        ],
+        "scope": 1383,
+        "src": "215:59:10",
+        "usedErrors": [
+          1381
+        ],
+        "usedEvents": []
+      }
+    ],
+    "src": "39:237:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.20+commit.a1b79de6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2024-04-21T07:22:16.659Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

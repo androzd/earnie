@@ -1,0 +1,3 @@
+# Earnie
+
+Welcome to Earnie!
